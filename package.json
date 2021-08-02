@@ -10,12 +10,13 @@
     "leancloud-storage": "^4.11.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start && node deploy.js",
+    "build": "react-scripts build && node deploy.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
