@@ -9,7 +9,7 @@ export default function Routes() {
   return (
     <Switch>
       <Route path="/" exact component={Home} />
-      <Route path="/app1" exact component={App} />
+      <Route path="/app" exact component={App} />
 
       {/* 路径不存在，则回到主页。 */}
       <Route component={Home} />
