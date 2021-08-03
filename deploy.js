@@ -7,4 +7,5 @@ routes.forEach((route) => {
     path.join("build", "index.html"),
     path.join("build", route, "index.html")
   );
+  fs.copySync(path.join("build", "index.html"), path.join("build", "404.html"));
 });
