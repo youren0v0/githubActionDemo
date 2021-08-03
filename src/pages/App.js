@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 const AV = require("leancloud-storage");
 
 var APP_ID = "9OV7cwtal2L1HlNKdRXKAOuW-gzGzoHsz"; // 注意 此处的ID和KEY每个人每个库是不一样的
@@ -14,22 +14,19 @@ AV.init({
 function App() {
   const [myuser, setmyuser] = useState();
   const [mypassword, setmypassword] = useState();
-  // useEffect(() => {
-  //   const editor = new E('#div1')
-  //   editor.create()
-
-  //   var canvas = new fabric.Canvas('canvas');
-
-  //   var rect = new fabric.Rect({
-  //     top: 100,
-  //     left: 100,
-  //     width: 60,
-  //     height: 70,
-  //     fill: 'red'
-  //   });
-
-  //   canvas.add(rect);
-  // }, [])
+  useEffect(() => {
+    // const editor = new E('#div1')
+    // editor.create()
+    // var canvas = new fabric.Canvas('canvas');
+    // var rect = new fabric.Rect({
+    //   top: 100,
+    //   left: 100,
+    //   width: 60,
+    //   height: 70,
+    //   fill: 'red'
+    // });
+    // canvas.add(rect);
+  }, []);
 
   return (
     <div className="App">
